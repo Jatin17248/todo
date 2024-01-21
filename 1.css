@@ -1,0 +1,202 @@
+	*{
+	margin: 0;
+	padding: 0;
+	}
+	body{
+  background: linear-gradient(135deg, rgb(179, 208, 253) 0%, rgb(164, 202, 248) 100%);
+  padding: 10px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.search-container {
+  position: relative;
+  width: 80%;
+  border-radius: 50px;
+  background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container::after, .search-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+}
+
+.search-container::before {
+  top: -1px;
+  left: -1px;
+  background: linear-gradient(0deg, rgb(218, 232, 247) 0%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+}
+
+.search-container::after {
+  bottom: -1px;
+  right: -1px;
+  background: linear-gradient(0deg, rgb(163, 206, 255) 0%, rgb(211, 232, 255) 100%);
+  box-shadow: rgba(79, 156, 232, 0.7019607843) 3px 3px 5px 0px, rgba(79, 156, 232, 0.7019607843) 5px 5px 20px 0px;
+  z-index: -2;
+}
+
+.input {
+  padding: 10px;
+  width: 100%;
+  background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+  border: none;
+  color: #9EBCD9;
+  font-size: 20px;
+  border-radius: 50px;
+  
+}
+input ::placeholder {
+        color: #9EBCD9; /* Change this to the desired color */
+      }
+
+.input:focus {
+  outline: none;
+  background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
+}
+
+.search__icon {
+  width: 50px;
+  aspect-ratio: 1;
+  border-left: 2px solid white;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-radius: 50%;
+  padding-left: 12px;
+  margin-right: 10px;
+}
+
+.search__icon:hover {
+  border-left: 3px solid white;
+}
+
+.search__icon path {
+  fill: white;
+}
+  
+    body {
+      font-family: Arial, sans-serif;
+    }
+   /* #taskInput {
+      width: 70%;
+      padding: 8px;
+    }
+    #addBtn {
+      padding: 8px;
+	  border-radius
+    }
+	*/
+    #taskList {
+      list-style-type: none;
+      padding: 0;
+    }
+	#CompList {
+      list-style-type: none;
+      padding: 0;
+    }
+    .taskItem {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      border-bottom: 1px solid #fff;
+	  color: #fff;
+	  font-size: 1.5rem;
+    }
+    .deleteBtn {
+      cursor: pointer;
+      color: red;
+    }
+	.fa-regular:hover {
+	  font-weight: 900 !important;
+	  font-family: "Font Awesome 6 Free";
+	  -moz-osx-font-smoothing: grayscale;
+	  -webkit-font-smoothing: antialiased;
+	  display: var(--fa-display, inline-block);
+	  font-style: normal;
+	  font-variant: normal;
+	  line-height: 1;
+	  text-rendering: auto;
+		}
+		
+	.newTasks, .CompTasks{
+	height: 35vh;
+	font-size: 1.5rem;
+	border: 2px solid #fff;
+	box-shadow: inset rgba(79, 156, 232, 0.7019607843) 3px 3px 5px 0px, inset rgba(79, 156, 232, 0.7019607843) 5px 5px 20px 0px;
+	width: 80vw;
+	overflow: auto;
+	border-radius: 15px;
+	border-top: 0;	
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin: 0;
+	}
+	
+	h2{
+	height: 4vh;
+	color: white;
+	margin-bottom: 0.5vh;
+	}
+	
+	.search-container{
+		height: 10vh;
+	}
+	
+	p{
+	color: white;
+	width: 80vw;
+	margin-top: 1vh;
+	padding:0;
+	border: 2px solid #fff;
+	border-bottom: 0;
+	/*border-right: 2px solid #fff;*/
+	
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	}
+	ul li:nth-child(even) {
+		background-image: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 25%);  
+		color: rgb(164, 202, 248);
+}
+
+#tc, #tp, .newTasks, .CompTasks{
+	visibility: hidden;
+}
+
+
+/* Define the scrollbar styles for WebKit browsers */
+div::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Define the scrollbar track styles */
+div::-webkit-scrollbar-track {
+  background-color: #a4caf8; /* Set the background color of the scrollbar track */
+  border: 1px solid white;
+  height: 90%;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Define the scrollbar thumb styles */
+div::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, #ffffff 0%, #a4caf8 50%, #ffffff); /* Set the background color with gradient */
+  border-radius: 4px; /* Set the border radius of the scrollbar thumb */
+  border: 1px solid white;
+}
+
+/* Define the scrollbar corner styles */
+div::-webkit-scrollbar-corner {
+  background-color: #fff; /* Set the background color of the scrollbar corner */
+}
+
+#foot-creator, #foot-creator:visited, #foot-creator:hover, #foot-creator:active {
+  color: #2977d8;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="1.css"> 
+</head>
+<body>
+<center>
+  <h2>To-Do App</h2>
+  
+  
+<div class="search-container">
+  <input class="input" type="text" id="taskInput" placeholder="Enter your task" onkeypress="handleKeyPress(event)">
+  <!---<svg viewBox="0 0 24 24" class="search__icon" onclick="addTask()">
+    <g>
+      <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+      </path>
+    </g>
+  </svg>-->
+  <img src="plusCircle.gif"  onclick="addTask()" style="margin-right: 0.5vw; width: 10vh;">
+</div>
+
+  
+  <div>
+  <!--<button id="addBtn" >Add Task</button>--><p id="tp"> <b><u>Tasks Pending</u></b><span id ="tpcount" class="a1"> </span></p>
+<div class="newTasks">
+	
+  <ul id="taskList"></ul>
+  </div></div>
+  <div>
+  <p id="tc"><u><b> Tasks Completed </u></b><span id ="tccount" class="a1"> </span></p>
+  <div class ="CompTasks">
+  
+  <ul id="CompList"></ul>
+  </div>
+  </div>
+   <div style="	 width: 100%;padding:0; margin:0; bottom:0;" >
+                <div class="col-lg-12"><center>
+                    <p style="text-align:center; font-family: 'Monotype Corsiva'; font-size:10px; color: #fff;"><b ><a href="mailto:jatinsood242@gmail.com" id="foot-creator">Designed and Developed by Jatin Sood</A></b></p>
+                </div>
+            </div>
+  <script src="1.js"></script>
+  <script src="00.js"></script>
+
+</body>
+</html>
